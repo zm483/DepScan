@@ -53,22 +53,22 @@ pip install depscan
 方式一：命令行参数（最安全，推荐）
 
 ```bash
-depscan https://github.com/python/cpython --token=ghp_你的令牌
+depscan https://github.com/python/cpython --token=ghp_ 令牌
 # 或简写
-depscan https://github.com/python/cpython -t ghp_你的令牌
+depscan https://github.com/python/cpython -t ghp_ 令牌
 ```
 
 方式二：环境变量（一次设置，多次使用）
 
 ```bash
 # Windows (PowerShell)
-$env:GITHUB_TOKEN="ghp_你的令牌"
+$env:GITHUB_TOKEN="ghp_ 令牌"
 
 # Windows (CMD)
-set GITHUB_TOKEN=ghp_你的令牌
+set GITHUB_TOKEN=ghp_ 令牌
 
 # Linux/Mac
-export GITHUB_TOKEN="ghp_你的令牌"
+export GITHUB_TOKEN="ghp_ 令牌"
 
 # 设置后直接使用
 depscan https://github.com/python/cpython
@@ -78,14 +78,14 @@ depscan https://github.com/python/cpython
 在项目根目录创建 .env 文件：
 
 ```env
-GITHUB_TOKEN=ghp_你的令牌
+GITHUB_TOKEN=ghp_ 令牌
 ```
 
 然后安装python-dotenv并在代码中加载（高级用法）
 
 2. 项目结构配置
 
-确保你的项目遵循以下结构：
+确保 项目遵循以下结构：
 
 ```
 DepScan/
@@ -118,7 +118,7 @@ depscan https://github.com/用户名/仓库名 --simple
 
 ```bash
 # 扫描Python官方仓库（完整分析）
-depscan https://github.com/python/cpython -t ghp_你的令牌
+depscan https://github.com/python/cpython -t ghp_ 令牌
 
 # 扫描示例仓库（快速查看）
 depscan https://github.com/octocat/Spoon-Knife --simple

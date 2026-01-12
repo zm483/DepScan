@@ -1,0 +1,4 @@
+PyGithub>=2.0.0
+click>=8.0.0
+rich>=10.0.0
+python-dotenv>=1.0.0  # 可选，用于环境变量管理
